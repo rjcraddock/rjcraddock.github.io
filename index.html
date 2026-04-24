@@ -49,7 +49,7 @@
       {
         "@type": "ItemList",
         "@id": "https://jimcraddock.com/redacted-science-compilation.html#itemlist",
-        "numberOfItems": 16,
+        "numberOfItems": 18,
         "itemListOrder": "https://schema.org/ItemListOrderAscending",
         "itemListElement": [
           { "@type": "ListItem", "position": 1,  "item": { "@type": "ScholarlyArticle", "name": "Candida albicans as a Biochemical Computer", "identifier": "10.5281/zenodo.19337525", "url": "https://doi.org/10.5281/zenodo.19337525", "author": { "@id": "https://jimcraddock.com/#jim-craddock" } } },
@@ -67,7 +67,9 @@
           { "@type": "ListItem", "position": 13, "item": { "@type": "ScholarlyArticle", "name": "Clear Evidence, No Trial — Mycobiome IBS and Antifungals", "identifier": "10.5281/zenodo.19645403", "url": "https://doi.org/10.5281/zenodo.19645403", "author": { "@id": "https://jimcraddock.com/#jim-craddock" }, "isSupplementedBy": { "@type": "CreativeWork", "name": "Pre-Registered Trial Protocol: Fluconazole vs. Placebo in Adult IBS", "identifier": "10.5281/zenodo.19646550", "url": "https://doi.org/10.5281/zenodo.19646550" } } },
           { "@type": "ListItem", "position": 14, "item": { "@type": "ScholarlyArticle", "name": "Terminal Onset Diabetes Insipidus With Candidiasis Majeure — Longitudinal Case Study, Birth through Stage 5 Threshold, 1969–2022", "identifier": "10.5281/zenodo.19702341", "url": "https://doi.org/10.5281/zenodo.19702341", "author": { "@id": "https://jimcraddock.com/#jim-craddock" } } },
           { "@type": "ListItem", "position": 15, "item": { "@type": "ScholarlyArticle", "name": "Acute Hemodynamic Decompensation Following Routine Phlebotomy in a Patient with Chronic Volume Dysregulation: A Five-Week Longitudinal Provocation Sequence", "identifier": "10.5281/zenodo.19462704", "url": "https://doi.org/10.5281/zenodo.19462704", "author": { "@id": "https://jimcraddock.com/#jim-craddock" } } },
-          { "@type": "ListItem", "position": 16, "item": { "@type": "ScholarlyArticle", "name": "Phase 5 of a 31-Year Managed Symbiont Progression — A Longitudinal Case Study Interpreted Through the Biochemical Computer Framework", "identifier": "10.5281/zenodo.19560800", "url": "https://doi.org/10.5281/zenodo.19560800", "author": { "@id": "https://jimcraddock.com/#jim-craddock" } } }
+          { "@type": "ListItem", "position": 16, "item": { "@type": "ScholarlyArticle", "name": "Phase 5 of a 31-Year Managed Symbiont Progression — A Longitudinal Case Study Interpreted Through the Biochemical Computer Framework", "identifier": "10.5281/zenodo.19560800", "url": "https://doi.org/10.5281/zenodo.19560800", "author": { "@id": "https://jimcraddock.com/#jim-craddock" } } },
+          { "@type": "ListItem", "position": 17, "item": { "@type": "CreativeWork", "name": "The Redacted Science Paper Seed Master", "identifier": "10.5281/zenodo.19743203", "url": "https://doi.org/10.5281/zenodo.19743203", "description": "Methodology document of the Redacted Science Research Initiative. Framework primer, seed templates, and AI operating instructions for reproducible framework-aligned paper generation.", "author": { "@id": "https://jimcraddock.com/#jim-craddock" } } },
+          { "@type": "ListItem", "position": 18, "item": { "@type": "ScholarlyArticle", "name": "Endometriosis as Organism-Directed Tissue Recruitment (Architect Report AS#001)", "identifier": "10.5281/zenodo.19718491", "url": "https://doi.org/10.5281/zenodo.19718491", "author": { "@id": "https://jimcraddock.com/#jim-craddock" } } }
         ]
       },
       {
@@ -363,6 +365,148 @@
       flex: 1;
     }
 
+    /* ---- Architect Reports section ---- */
+    .rs-architect-divider {
+      border: 0;
+      border-top: 2px solid rgba(122, 154, 106, 0.35);
+      margin: 56px 0 32px;
+    }
+    .rs-architect-section-h {
+      color: #7a9a6a;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 28px;
+      text-align: center;
+      margin: 0 0 8px;
+      font-weight: normal;
+      letter-spacing: 0.5px;
+    }
+    .rs-architect-section-intro {
+      color: #9ab88a;
+      font-size: 13px;
+      font-style: italic;
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 36px;
+      line-height: 1.65;
+    }
+    .rs-series-group-h {
+      color: #5a7a4a;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 17px;
+      margin: 36px 0 18px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(122, 154, 106, 0.25);
+      letter-spacing: 0.3px;
+    }
+    /* Architect report rows share the paper-row structure but get sage accents */
+    .rs-paper-row.rs-architect-row .rs-paper-num { color: #7a9a6a; }
+    .rs-paper-row.rs-architect-row .rs-content {
+      border-left-color: #7a9a6a;
+    }
+    .rs-paper-row.rs-architect-row .rs-doi-btn {
+      background: #2d4a28;
+      border-color: #7a9a6a;
+    }
+    .rs-paper-row.rs-architect-row .rs-doi-btn:hover {
+      background: #3d6437;
+      border-color: #9ab88a;
+    }
+    .rs-paper-row.rs-architect-row .rs-toggle.active {
+      background: rgba(122, 154, 106, 0.18);
+      border-color: #7a9a6a;
+    }
+    .rs-seed-footer {
+      margin: 16px 0 8px;
+      padding: 10px 14px;
+      border-left: 2px solid #7a9a6a;
+      background: rgba(122, 154, 106, 0.06);
+      font-size: 12px;
+      font-style: italic;
+      color: #9ab88a;
+      line-height: 1.55;
+    }
+    /* Seed Master card — summary only, no DOI link yet */
+    .rs-paper-row.rs-seed-master .rs-paper-num { color: #7a9a6a; }
+    .rs-paper-row.rs-seed-master .rs-content {
+      border-left-color: #7a9a6a;
+    }
+    .rs-doi-pending {
+      color: #9ab88a;
+      font-size: 11px;
+      font-style: italic;
+      padding: 5px 12px;
+      letter-spacing: 0.3px;
+    }
+
+    /* ---- Clinical Case Reports soft section header (Option A grouping) ---- */
+    .rs-case-studies-h {
+      color: #c9b88a;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 17px;
+      margin: 36px 0 4px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(201, 184, 138, 0.25);
+      letter-spacing: 0.3px;
+      font-weight: normal;
+    }
+    .rs-case-studies-intro {
+      color: #9aa8bf;
+      font-size: 12px;
+      font-style: italic;
+      margin: 0 0 14px;
+      line-height: 1.5;
+    }
+
+    /* ---- Nostr Event ID copy button + View (njump) link ---- */
+    .rs-nostr-copy {
+      background: #3a4a2e;
+      border: 1px solid #5a7a4a;
+      color: #c8d4b4;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-radius: 2px;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .rs-nostr-copy:hover { background: #4d6440; border-color: #7a9a6a; color: #e8f0d8; }
+    .rs-nostr-copy.copied {
+      background: #5a7a4a;
+      color: #ffffff;
+      border-color: #9ab88a;
+    }
+    .rs-nostr-view {
+      background: transparent;
+      border: 1px solid #5a7a4a;
+      color: #c8d4b4;
+      padding: 5px 10px;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-radius: 2px;
+      transition: all 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+    }
+    .rs-nostr-view:hover { background: rgba(122, 154, 106, 0.12); border-color: #7a9a6a; color: #e8f0d8; }
+    @media (max-width: 600px) {
+      .rs-meta {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+      }
+      .rs-revisions-wrap {
+        align-self: flex-end;
+      }
+    }
+
     .rs-content {
       display: none;
       margin: 14px 0 4px;
@@ -519,6 +663,14 @@
       </button>
       <div class="rs-revisions-panel" id="revPanel" role="region" aria-label="Revision history">
         <div class="rs-revision-row">
+          <span class="rs-revision-date">20260424</span>
+          <span class="rs-revision-note">Seed Master deposited on Zenodo with full Summary and Abstract. Added Clinical Case Reports soft section header above Papers 14–16. AS#001 Endometriosis gets Nostr Event ID copy button and View link.</span>
+        </div>
+        <div class="rs-revision-row">
+          <span class="rs-revision-date">20260423</span>
+          <span class="rs-revision-note">Paper A updated to v7 abstract (52 refs, pituitary and pharmacovigilance additions). Paper C citation fix (Dell'Olmo). New Architect Reports section introduced with Paper Seed Master entry and AS#001 Endometriosis. Mobile fix for Revision History placement.</span>
+        </div>
+        <div class="rs-revision-row">
           <span class="rs-revision-date">20260422</span>
           <span class="rs-revision-note">Added Terminal Onset DI case study as Paper 14, pushing 2018 Provocation Sequence to 15 and Phase 5 to 16.</span>
         </div>
@@ -543,7 +695,7 @@
   </div>
 
   <p class="rs-intro">
-    Sixteen preprints published on Zenodo. For each paper, click <em>Summary</em> for a plain-English entry point — technical terms explained inside brackets — or <em>Abstract</em> for the paper's formal summary. Full PDFs are one click away via DOI. Papers are ordered conceptually: foundations first (Paper A, Pan-Mammalian Coevolution, Paper B), then the umbrella framework for chronic disease, its five clinical applications, the civilizational-implications paper, the historical and investigative papers, and finally three longitudinal case studies documenting a single subject — the author — across fifty-two years.
+    Sixteen peer-citable preprints published on Zenodo, plus a separate section for the Paper Seed Master and Architect Reports generated through the Seed Analysis Process. For each paper, click <em>Summary</em> for a plain-English entry point — technical terms explained inside brackets — or <em>Abstract</em> for the paper's formal summary. Full PDFs are one click away via DOI. Papers are ordered conceptually: foundations first (Paper A, Pan-Mammalian Coevolution, Paper B), then the umbrella framework for chronic disease, its five clinical applications, the civilizational-implications paper, the historical and investigative papers, and finally three longitudinal case studies documenting a single subject — the author — across fifty-two years.
   </p>
 
   <!-- ============================================================ PAPER 1 -->
@@ -554,7 +706,7 @@
       <div class="rs-paper-actions">
         <button class="rs-toggle" data-target="p1s" aria-expanded="false">Summary<span class="rs-caret">▼</span></button>
         <button class="rs-toggle" data-target="p1a" aria-expanded="false">Abstract<span class="rs-caret">▼</span></button>
-        <span class="rs-refs">44 refs</span>
+        <span class="rs-refs">52 refs</span>
         <a class="rs-doi-btn" href="https://doi.org/10.5281/zenodo.19337525" target="_blank" rel="noopener">DOI ↗</a>
       </div>
     </div>
@@ -563,19 +715,19 @@
       <div class="rs-section-h">Summary for the Reader from the Architect</div>
       <p class="rs-para">This is the foundation. Every other paper in this series rests on one claim: <em>Candida albicans</em> <span class="rs-bracket">[the yeast your doctor dismisses as "a normal part of your gut flora"]</span> is not a pathogen sitting around waiting to cause a problem — it is a biochemical computer, and it has been running inside you your whole life.</p>
       <p class="rs-para">It senses. It decides. It acts. It remembers. <span class="rs-bracket">[Yes, I said "remembers." Stay with me.]</span></p>
-      <p class="rs-para">The paper pulls together decades of peer-reviewed fungal biology — phenotypic switching <span class="rs-bracket">[shape-shifting between yeast and hyphae, which is closer to "changes body plan on command" than anything you've ever seen a microbe do]</span>, parasexual reproduction <span class="rs-bracket">[a third kind of reproduction that isn't sexual, isn't asexual, and wasn't supposed to exist]</span>, quorum sensing <span class="rs-bracket">[chemical voting — cells counting each other in real time and changing behavior based on the result]</span>, cross-kingdom signaling <span class="rs-bracket">[speaking chemical languages to bacteria AND to your cells, fluently, in both directions]</span>, and lipid-mediated communication — and reorganizes it into a single model.</p>
-      <p class="rs-para">Individually, these findings are scattered across fungal journals nobody in mainstream medicine reads. <span class="rs-bracket">[Seriously. Go look. Mycology is the unloved stepchild of microbiology.]</span> Assembled, they describe an organism with sensing, processing, output, and memory — the four components of a computer. Pure biochemical and biological programming, no sentience.</p>
+      <p class="rs-para">The paper pulls together decades of peer-reviewed fungal biology — phenotypic switching <span class="rs-bracket">[shape-shifting between yeast and hyphae, which is closer to "changes body plan on command" than anything you've ever seen a microbe do]</span>, parasexual reproduction <span class="rs-bracket">[a third kind of reproduction that isn't sexual, isn't asexual, and wasn't supposed to exist]</span>, quorum sensing <span class="rs-bracket">[chemical voting — cells counting each other in real time and changing behavior based on the result]</span>, cross-kingdom signaling <span class="rs-bracket">[speaking chemical languages to bacteria AND to your cells, fluently, in both directions]</span>, lipid-mediated communication, and — new in this version — a hybrid-origin genome architecture that reads as purpose-built for host-facing computation, a body-wide non-blood distribution network (the interstitium) that the organism uses to move between niches, and a reinterpretation of pituitary microadenomas as governance-load signatures rather than random growths — and reorganizes all of it into a single model.</p>
+      <p class="rs-para">Individually, these findings are scattered across fungal journals nobody in mainstream medicine reads. <span class="rs-bracket">[Seriously. Go look. Mycology is the unloved stepchild of microbiology.]</span> Assembled, they describe an organism with sensing, processing, output, and memory — the four components of a computer. Pure biochemical and biological programming, no sentience. <span class="rs-bracket">[None. It's just reactive code in living form.]</span></p>
       <p class="rs-para">The argument is not that any single piece is new. The argument is that nobody has put the pieces together before, and when you do, the picture that emerges reframes the organism entirely.</p>
       <p class="rs-para">The reader does not need to accept the full co-evolutionary story in Paper B to accept Paper A. Paper A stands on published findings alone. <span class="rs-bracket">[Go check the citations. I'll wait.]</span></p>
     </div>
 
     <div class="rs-content" id="p1a">
       <div class="rs-section-h">Abstract</div>
-      <p class="rs-para"><em>Candida albicans</em> functions as a distributed biochemical computer, processing host and environmental signals through multiple parallel channels to modulate immunity, metabolism, tissue remodeling, and endocannabinoid tone. This paper details its distinctive genetic hardware (~1,300 orphan genes with no orthologs in other yeasts), ancient CUG codon reassignment (~171 ± 27 Ma), divergence from <em>C. dubliniensis</em> with asymmetric gene-family expansion (~20 Ma), parasexual cycle for rapid diversity generation, and layered signaling architecture (extracellular vesicles with morphology-dependent cargo, candidalysin and Ece1 peptide panel, secreted aspartyl proteases, cholinergic receptor interface, authentic prostaglandin E₂ production from host arachidonic acid, cross-kingdom RNA potential, tryptophan-kynurenine pathway modulation, mast cell activation via cell wall pattern recognition, and a dopaminergic signaling intersection through the Gpr1 receptor).</p>
+      <p class="rs-para"><em>Candida albicans</em> functions as a distributed biochemical computer, processing host and environmental signals through multiple parallel channels to modulate immunity, metabolism, tissue remodeling, and endocannabinoid tone. This paper details its distinctive genetic hardware (~1,300 orphan genes with no orthologs in other yeasts), ancient CUG codon reassignment (~171 ± 27 Ma), divergence from <em>C. dubliniensis</em> with asymmetric gene-family expansion (~20 Ma), parasexual cycle for rapid diversity generation, and layered signaling architecture (extracellular vesicles with morphology-dependent cargo, candidalysin and Ece1 peptide panel, secreted aspartyl proteases, cholinergic receptor interface, authentic prostaglandin E₂ production from host arachidonic acid, cross-kingdom RNA potential, tryptophan-kynurenine pathway modulation, mast cell activation via cell wall pattern recognition, direct modulation of host metabolic state through suppression of plasma leptin (Peroumal et al., 2022) and elevation of apolipoprotein-B-containing lipoproteins via formyl-methionine–HIF-2α–ceramide signaling (Wang et al., 2024), and a dopaminergic signaling intersection through the Gpr1 receptor).</p>
       <p class="rs-para">The hybrid origin of <em>C. albicans</em> from a Miocene fusion of two parental lineages at approximately 2.8% sequence divergence (Mixão and Gabaldón, 2020) is integrated here as the source of the chimeric genome architecture: loss of heterozygosity fixes host-calibrated input sensors to a single optimized version while retained ancestral heterozygosity at effector, adhesion, efflux, and phenotypic-switch loci supports combinatorial output — a committed-input, parallel-output design consistent with distributed biochemical computation. The organism's extracellular vesicle output channel, now documented to reach the central nervous system via the nasal-mucosal route in mammalian therapeutic contexts (Madhu et al., 2026), is proposed as a chronic endogenous delivery vector of the colonized state, with inverse valence relative to the therapeutic reference.</p>
       <p class="rs-para">The interstitium, a body-wide network of fluid-filled collagen-lined compartments (Benias et al., 2018), is identified as the physical distribution layer connecting peripheral colonies to host nutrient interfaces and enabling inter-niche signal propagation without bloodstream exposure. Multi-timescale epigenetic memory, from white-opaque phenotypic locking to chromatin-level bet-hedging and mitochondrial genome methylation, enables state maintenance without genomic change.</p>
-      <p class="rs-para">The pituitary microadenoma, conventionally classified as a benign incidental neoplasm with a prevalence of 14–22% in autopsy and radiological studies, is reinterpreted here as a tissue stress response to sustained organism-driven governance load on the anterior pituitary, supported by documented hyphal access to the gland, confirmed molecular machinery for local hormone transport, sequestration, and enzymatic modification, an epidemiological profile consistent with variable organism demand rather than spontaneous neoplasia, and a longitudinal case study documenting microgranuloma formation, hyphal migration to the pituitary region, and subsequent structural failure under escalating load across four transition phases (Craddock, 2026c).</p>
-      <p class="rs-para">No other organism is known to combine this full toolkit. Thirteen testable predictions, grouped by architectural layer, are offered to evaluate the model, including hybrid-origin bimodal orphan ancestry test and host-mediated subroutine termination via glucose override. The conventional "opportunistic pathogen" classification is re-examined; the organism appears tuned for regulated, long-term persistence rather than unchecked exploitation. This technical grounding is straightforward and stands on its own.</p>
+      <p class="rs-para">The pituitary microadenoma, conventionally classified as a benign incidental neoplasm with a prevalence of 14–22% in autopsy and radiological studies, is reinterpreted here as a tissue stress response to sustained organism-driven governance load on the anterior pituitary, supported by documented hyphal access to the gland, confirmed molecular machinery for local hormone transport, sequestration, and enzymatic modification, an epidemiological profile consistent with variable organism demand rather than spontaneous neoplasia, and a longitudinal case study documenting microgranuloma formation, hyphal migration to the pituitary region, and subsequent structural failure under escalating load across four transition phases (Craddock, 2026c). Pharmacovigilance data further confirm the governance architecture: azole antifungals produce endocrine cascades whose breadth and specificity track the drug's inhibitory profile against organism-host enzymatic nodes (11β-HSD2, 11β-hydroxylase, CYP17A1), with reporting odds ratios exceeding 800 for posaconazole-associated apparent mineralocorticoid excess and a clean mechanistic split between azoles that hit these nodes and those that do not. Standard diagnostic panels compound this invisibility: urine bicarbonate, the most informative marker for the renal tubular acidosis this governance predicts, was removed from routine urinalysis, and creatinine-based renal filtration estimates systematically overestimate function in any subject whose muscle mass is declining under organism-driven substrate progression.</p>
+      <p class="rs-para">No other organism is known to combine this full toolkit. Fifteen testable predictions, grouped by architectural layer, are offered to evaluate the model, including hybrid-origin bimodal orphan ancestry test and host-mediated subroutine termination via glucose override. The conventional "opportunistic pathogen" classification is re-examined; the organism appears tuned for regulated, long-term persistence rather than unchecked exploitation. This technical grounding is straightforward and stands on its own.</p>
     </div>
   </div>
 
@@ -951,6 +1103,10 @@
     </div>
   </div>
 
+  <!-- ============================================================ CLINICAL CASE REPORTS -->
+  <h3 class="rs-case-studies-h">Clinical Case Reports</h3>
+  <p class="rs-case-studies-intro">Three longitudinal case studies documenting a single subject — the author — across 52 years. Shared framework, different windows.</p>
+
   <!-- ============================================================ PAPER 14 -->
   <div class="rs-paper-row">
     <div class="rs-paper-header">
@@ -959,7 +1115,7 @@
       <div class="rs-paper-actions">
         <button class="rs-toggle" data-target="p14s" aria-expanded="false">Summary<span class="rs-caret">▼</span></button>
         <button class="rs-toggle" data-target="p14a" aria-expanded="false">Abstract<span class="rs-caret">▼</span></button>
-        <span class="rs-refs">0 refs</span>
+        <span class="rs-refs">9 refs</span>
         <a class="rs-doi-btn" href="https://doi.org/10.5281/zenodo.19702341" target="_blank" rel="noopener">DOI ↗</a>
       </div>
     </div>
@@ -1043,6 +1199,97 @@
     </div>
   </div>
 
+  <!-- ============================================================ SEED MASTER -->
+  <hr class="rs-architect-divider">
+
+  <div class="rs-paper-row rs-seed-master">
+    <div class="rs-paper-header">
+      <span class="rs-paper-num">◆</span>
+      <h2 class="rs-paper-title">The Redacted Science Paper Seed Master</h2>
+      <div class="rs-paper-actions">
+        <button class="rs-toggle" data-target="seedmaster-s" aria-expanded="false">Summary<span class="rs-caret">▼</span></button>
+        <button class="rs-toggle" data-target="seedmaster-a" aria-expanded="false">Abstract<span class="rs-caret">▼</span></button>
+        <a class="rs-doi-btn" href="https://doi.org/10.5281/zenodo.19743203" target="_blank" rel="noopener">DOI ↗</a>
+      </div>
+    </div>
+    <div class="rs-content" id="seedmaster-s">
+      <div class="rs-section-h">Summary for the Reader from the Architect</div>
+      <p class="rs-para">The Seed Master is how the Redacted Science framework reproduces itself.</p>
+      <p class="rs-para">Here's the problem it solves. The framework — <em>Candida albicans</em> as a biochemical computer, coevolved with mammals, producing a recognizable physiological phenotype — is big. It touches dozens of chronic conditions, hundreds of drugs and substances, and a long list of institutional and historical questions about why the framework wasn't recognized sooner. One person cannot write every paper the framework generates. I can't. Nobody can. <span class="rs-bracket">[Well. Someone could. But it would take several lifetimes and I've already used most of one.]</span></p>
+      <p class="rs-para">The Seed Master is the reproducibility infrastructure. It contains three things any capable researcher — or any competent AI instance — needs to generate a framework-aligned first draft on a new subject:</p>
+      <p class="rs-para"><strong>The foundational corpus.</strong> The papers that define the framework, listed with DOIs so the drafter can pull them into context.</p>
+      <p class="rs-para"><strong>The framework primer.</strong> A three-paragraph canonical statement of what the framework claims and how it claims it, so every draft starts from the same understanding of the model.</p>
+      <p class="rs-para"><strong>The seed outlines.</strong> Structured prompts — one per subject — that tell the drafter which aspects of the subject to address, which framework components to engage with, and what evidence the draft needs to marshal. These start as placeholders and may or may not advance to a ready-to-build state.</p>
+      <p class="rs-para">Plus the operating instructions: how to cite, what voice to use, what structural sections the output requires, what bracketed asides are for and when to use them.</p>
+      <p class="rs-para">A drafter takes a seed, pulls the corpus into context, follows the instructions, and produces a first-draft paper. The draft is then editorially reviewed by a human (me, for now) and refined with peer feedback, including cross-AI review with Grok or Claude to catch framework-incoherence or citation errors. The result is an <strong>Architected Report</strong> — publishable after iterative edits. <strong>#TheArchitect Reports</strong> are deposited on Zenodo, indexed in the Architect Report Registry, and added to the compilation. Anyone can utilize the architectural structure or the seed for their own purposes. This is a template in use.</p>
+      <p class="rs-para">This is not ghostwriting. It's not "let AI write your papers." <span class="rs-bracket">[Every draft is reviewed line-by-line. Every citation is verified. Every framework-critical claim is stress-tested against the foundational papers before deposit.]</span> What the Seed Master does is separate the two things that were jammed together in 20th-century academic writing: <strong>framework-aligned reasoning</strong> (which can be systematized) from <strong>editorial judgment about what the finished paper needs</strong> (which cannot).</p>
+      <p class="rs-para">The methodology is the contribution as much as the individual papers are. If the framework is correct, the set of papers that should exist within it is much larger than what any single person can write. A documented, reproducible process for generating those papers at scale is part of what makes the framework falsifiable — because it means the predictions the framework generates are accessible to anyone willing to pick up a seed and run it.</p>
+      <p class="rs-para">The methodology has been validated in production.</p>
+    </div>
+    <div class="rs-content" id="seedmaster-a">
+      <div class="rs-section-h">Abstract</div>
+      <p class="rs-para">This document contains seed outlines for papers to be generated within the Redacted Science Research Initiative. Each seed is a structured prompt sufficient for an AI instance with access to the project corpus to generate a first-draft paper.</p>
+      <p class="rs-para">The Draft is created by utilizing the Paper Seed Master and any advanced AI, along with the specified papers from the Redacted Science Research Initiative Corpus, to include but not limited to:</p>
+      <p class="rs-para"><strong>The Three Foundational Papers</strong></p>
+      <p class="rs-para">• Paper A — Craddock, Biochemical Computer — DOI: 10.5281/zenodo.19337525<br>• Paper B — Craddock, Saline Oscillation — DOI: 10.5281/zenodo.19369715<br>• Paper C — Craddock, Longitudinal Case Study (Birth through Stage 5 Threshold) — DOI: 10.5281/zenodo.19702341</p>
+      <p class="rs-para"><strong>Framework Extensions</strong></p>
+      <p class="rs-para">• Craddock, Pan-Mammalian Hypothesis — DOI: 10.5281/zenodo.19643601<br>• Craddock, Implications of Biochemical Computer — DOI: 10.5281/zenodo.19488041<br>• Craddock, Focal Infections 2.0 — DOI: 10.5281/zenodo.19423069<br>• Craddock, Exposé — DOI: 10.5281/zenodo.19393803</p>
+      <p class="rs-para"><strong>Clinical Case Reports</strong></p>
+      <p class="rs-para">• Craddock, Acute Hemodynamic Decompensation — DOI: 10.5281/zenodo.19462705<br>• Craddock, Phase 5 Longitudinal Case Study — DOI: 10.5281/zenodo.19560800</p>
+      <p class="rs-para"><strong>Clear Evidence, No Trial Series</strong></p>
+      <p class="rs-para">• Craddock, Clear Evidence IBS — DOI: 10.5281/zenodo.19645403<br>• Craddock, Clear Evidence IBS Protocol — DOI: 10.5281/zenodo.19646550</p>
+      <p class="rs-para"><strong>Stuck-State Series</strong></p>
+      <p class="rs-para">• Craddock, Stuck-State Umbrella — DOI: 10.5281/zenodo.19582484<br>• Craddock, T2D Stuck State — DOI: 10.5281/zenodo.19582791<br>• Craddock, Obesity Stuck State — DOI: 10.5281/zenodo.19600443<br>• Craddock, Anorexia Stuck State — DOI: 10.5281/zenodo.19583423<br>• Craddock, IBS Stuck State — DOI: 10.5281/zenodo.19598460<br>• Craddock, Parkinson's Stuck State — DOI: 10.5281/zenodo.19600888</p>
+      <p class="rs-para"><strong>Architect Reports</strong></p>
+      <p class="rs-para">• Architect Report AS#001 — Endometriosis as Organism-Directed Tissue Recruitment — DOI: 10.5281/zenodo.19718491</p>
+      <p class="rs-para">The Seed Analysis Process operates through a single structured prompt given to an AI instance with the foundational corpus and a specific seed in context:</p>
+      <p class="rs-para"><em>Generate a first draft of this paper according to the Redacted Science voice and style requirements in the Paper Seed Master. Use the framework corpus in context. Cite only per the Citation Discipline categories (a) through (d) using the author-short-title format. Produce output in the specified format with all required sections: Abstract, Keywords, Introduction with adapted Framework Primer, Framework Basis, Mechanism, Predictions with evidence class annotations, Discussion, Counter-Arguments Addressed, Conclusion, Closing Declaration with V1 version suffix, References in hanging-indent format, and Suggested Additional Citations if any.</em></p>
+      <p class="rs-para">Version 5 changes the structural organization from series-grouped to flat-table-ordered. Each seed carries a three-digit primary key number assigned at insertion. The series prefix is a mutable attribute, not a numbering scheme. Seeds are ordered in the document by insertion order. The first seed inserted is Seed 001; new seeds append to the end.</p>
+      <p class="rs-para">The Master list is kept at <a href="https://jimcraddock.com/redacted-science-compilation.html" target="_blank" rel="noopener">https://jimcraddock.com/redacted-science-compilation.html</a></p>
+    </div>
+  </div>
+
+  <!-- ============================================================ ARCHITECT REPORTS -->
+  <h2 class="rs-architect-section-h">Architect Reports</h2>
+  <p class="rs-architect-section-intro">Framework-aligned papers generated through the Redacted Science Seed Analysis Process. First drafts are AI-generated from a structured seed and the foundational corpus, then editorially refined with cross-AI review and human verification prior to deposit. Grouped by series prefix as each series accumulates entries.</p>
+
+  <h3 class="rs-series-group-h">AS# — Stuck State Series</h3>
+
+  <!-- ============================================================ AS#001 Endometriosis -->
+  <div class="rs-paper-row rs-architect-row">
+    <div class="rs-paper-header">
+      <span class="rs-paper-num">AS#001</span>
+      <h2 class="rs-paper-title">Endometriosis as Organism-Directed Tissue Recruitment</h2>
+      <div class="rs-paper-actions">
+        <button class="rs-toggle" data-target="as001-s" aria-expanded="false">Summary<span class="rs-caret">▼</span></button>
+        <button class="rs-toggle" data-target="as001-a" aria-expanded="false">Abstract<span class="rs-caret">▼</span></button>
+        <span class="rs-refs">14 refs</span>
+        <a class="rs-doi-btn" href="https://doi.org/10.5281/zenodo.19718491" target="_blank" rel="noopener">DOI ↗</a>
+        <button class="rs-nostr-copy" data-nostr="1dff01ce8d66aeb89d41de6588aa8eb3fd77162db44f3eb981352dd98963a9bf" title="Copy Nostr event ID to clipboard">Event ID</button>
+        <a class="rs-nostr-view" href="https://njump.me/1dff01ce8d66aeb89d41de6588aa8eb3fd77162db44f3eb981352dd98963a9bf" target="_blank" rel="noopener" title="View this Architect Report on Nostr">View ↗</a>
+      </div>
+    </div>
+    <div class="rs-content" id="as001-s">
+      <div class="rs-section-h">Summary for the Reader from the Architect</div>
+      <p class="rs-para">This is an <em>Architect Report</em> — a framework-aligned paper generated through the Redacted Science Seed Analysis Process. The process: a seed document specifies a subject, the relevant foundational papers, and the structural requirements for the output. ChatGPT generated the initial draft using those inputs, citing available sources and flagging gaps where external literature was needed. The flagged gaps were resolved through targeted literature search, and peer-reviewed sources were integrated into the final draft with human verification at each stage. The methodology is documented separately in the Redacted Science Paper Seed Master. <span class="rs-bracket">[The framework is reproducible. Any capable researcher or AI with the foundational papers and a seed can produce a framework-positioned first draft. The methodology is the contribution as much as the individual papers are.]</span></p>
+      <p class="rs-para">This report applies that process to endometriosis, working from seed AS#001 (the first seed in the Stuck State series).</p>
+      <p class="rs-para">Endometriosis is conventionally described as the presence of endometrium-like tissue outside the uterus, most commonly explained through retrograde menstruation, hormonal dependence, immune dysregulation, and altered inflammatory handling. Under the Redacted Science framework, those observations are not rejected. They are reorganized.</p>
+      <p class="rs-para">The proposal: endometriosis represents a stuck program mode in which resident <em>Candida albicans</em> colonies direct ectopic tissue recruitment and maintenance at colonized pelvic, peritoneal, and bowel interfaces. Menstrual cyclicity matters because it supplies the repeating substrate pulse the organism can exploit: progesterone withdrawal, endometrial breakdown, blood products, iron, cytokines, growth factors, and altered local immune tone. <span class="rs-bracket">[The cycle is the feed event. The organism already knows what to do with it.]</span></p>
+      <p class="rs-para">The core claim is not that endometriotic implants are false endometrium. The claim is that the organism recruits local tissue into endometrial behavior where it already has positional advantage, then sustains that ectopic program through cyclic feeding, interstitial signaling, hormone sensing, and local immune management. This reframes chronicity. Retrograde flow may be common; persistent establishment at specific sites is the event that requires explanation.</p>
+      <p class="rs-para">The framework resolves several otherwise disconnected features of endometriosis at once: the mismatch between common retrograde flow and lower disease prevalence, the bowel and pelvic distribution of disease, the strength of gastrointestinal comorbidity <span class="rs-bracket">[pooled IBS prevalence in endometriosis cohorts of 23.4%, odds ratios three to five times baseline]</span>, the benefit of hormonal suppression despite the condition being framed as misplaced tissue, and the substantial recurrence problem after incomplete excision.</p>
+      <p class="rs-para">The paper generates six testable predictions centered on implant-site mycobiome signal, antifungal response, antibiotic-exposure linkage, pregnancy-associated shifts, responder enrichment, and recurrence following incomplete colonized-site removal. Recent work by Talwar et al. (2025) — a mouse-model study showing that fungal depletion impedes endometriosis lesion progression — provides the first direct mycobiome-centered evidence consistent with the framework's predictions.</p>
+      <p class="rs-para">This paper is not offered as a clinical practice guideline or treatment protocol. It is a framework paper advancing a specific mechanistic claim and exposing that claim to refutation.</p>
+      <div class="rs-seed-footer">Initial draft generated via the Redacted Science Seed Analysis Process from seed AS#001, with cross-AI review and human editorial verification prior to deposit.</div>
+    </div>
+    <div class="rs-content" id="as001-a">
+      <div class="rs-section-h">Abstract</div>
+      <p class="rs-para">Endometriosis is conventionally described as the presence of endometrium-like tissue outside the uterus, most commonly explained through retrograde menstruation, hormonal dependence, immune dysregulation, and altered inflammatory handling. Under the Redacted Science framework, those observations are not rejected. They are reorganized. This first-draft paper proposes that endometriosis represents a stuck program mode in which resident <em>Candida albicans</em> colonies direct ectopic tissue recruitment and maintenance at colonized pelvic, peritoneal, and bowel interfaces. Menstrual cyclicity matters because it supplies the repeating substrate pulse the organism can exploit: progesterone withdrawal, endometrial breakdown, blood products, iron, cytokines, growth factors, and altered local immune tone.</p>
+      <p class="rs-para">The paper extends the biochemical computer model of <em>C. albicans</em> (Craddock, Biochemical Computer), the coevolutionary framing of the Saline Oscillation Hypothesis (Craddock, Saline Oscillation), and the stuck-program architecture of the Umbrella and IBS papers (Craddock, Stuck-State Umbrella; Craddock, IBS Stuck State) to reproductive tissue. The core claim is not that endometriotic implants are false endometrium. The claim is that the organism recruits local tissue into endometrial behavior where it already has positional advantage, then sustains that ectopic program through cyclic feeding, interstitial signaling, hormone sensing, and local immune management. This reframes chronicity. Retrograde flow may be common; persistent establishment at specific sites is the event that requires explanation.</p>
+      <p class="rs-para">The framework resolves several otherwise disconnected features at once: the mismatch between common retrograde flow and lower disease prevalence, the bowel and pelvic distribution of disease, the strength of gastrointestinal comorbidity, the benefit of hormonal suppression despite the condition being framed as misplaced tissue, and the substantial recurrence problem after incomplete excision. It generates six testable predictions centered on implant-site mycobiome signal, antifungal response, antibiotic-exposure linkage, pregnancy-associated shifts, responder enrichment, and recurrence following incomplete colonized-site removal. Recent work by Talwar et al. (2025) provides the first direct mycobiome-centered evidence consistent with the framework's predictions. This paper is not offered as a clinical practice guideline or treatment protocol. It is a framework paper advancing a specific mechanistic claim and exposing that claim to refutation.</p>
+      <div class="rs-seed-footer">Initial draft generated via the Redacted Science Seed Analysis Process from seed AS#001, with cross-AI review and human editorial verification prior to deposit.</div>
+    </div>
+  </div>
+
   <!-- ============================================================ CLOSING -->
   <section class="rs-closing">
     <h2 class="rs-closing-h">Closing</h2>
@@ -1111,6 +1358,37 @@
         target.classList.add('open');
         btn.classList.add('active');
         btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // Nostr Event ID: copy to clipboard on click
+  document.querySelectorAll('.rs-nostr-copy').forEach(btn => {
+    btn.addEventListener('click', async (e) => {
+      e.stopPropagation();
+      const id = btn.dataset.nostr;
+      if (!id) return;
+      const flashCopied = () => {
+        const originalText = btn.textContent;
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.classList.remove('copied');
+        }, 1500);
+      };
+      try {
+        await navigator.clipboard.writeText(id);
+        flashCopied();
+      } catch (err) {
+        // Fallback for older browsers or clipboard permission issues
+        const tmp = document.createElement('textarea');
+        tmp.value = id;
+        document.body.appendChild(tmp);
+        tmp.select();
+        try { document.execCommand('copy'); } catch (_) {}
+        document.body.removeChild(tmp);
+        flashCopied();
       }
     });
   });
